@@ -1,0 +1,8 @@
+target/
+.settings/
+build/classes/
+*~
+temp/
+transaction.log
+.tern-project
+bin/

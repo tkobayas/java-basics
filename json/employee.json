@@ -1,0 +1,5 @@
+{
+	"name"		: "John Lennon",
+	"age"		: 35,
+	"licenses"	: ["License1", "License2"]
+}

@@ -12,6 +12,8 @@ public class Ex07FileCopy {
 
         Path fromPath = Paths.get("./work/sample.dat");
         Path toPath = Paths.get("./work/copy.dat");
+//        Path toPath = Paths.get("./work2"); // no!
+
 
         try {
             Files.copy(fromPath, toPath, StandardCopyOption.REPLACE_EXISTING);

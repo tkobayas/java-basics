@@ -3,7 +3,7 @@ package com.sample;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ex01Filter {
+public class Ex01Filter2 {
 
     public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class Ex01Filter {
         studentList.add(new Student("Takuya", 80));
 
         studentList.stream()
-                    .map((Object s) -> ((Student)s).getScore())
-                    .forEach(s -> System.out.println(s));
+            .filter(s -> s.getScore() >= 70)
+            .forEach(s -> System.out.println(s.getName()));
     }
 }

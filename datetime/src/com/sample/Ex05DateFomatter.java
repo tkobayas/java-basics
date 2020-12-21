@@ -10,6 +10,9 @@ public class Ex05DateFomatter {
 
     public static void main(String[] args) {
         
+        LocalDate localDate = LocalDate.from(DateTimeFormatter.BASIC_ISO_DATE.parse("20200101"));
+        System.out.println(localDate);
+        
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime);
         

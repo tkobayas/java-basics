@@ -6,3 +6,5 @@ temp/
 transaction.log
 .tern-project
 bin/
+/.metadata/
+/.recommenders/

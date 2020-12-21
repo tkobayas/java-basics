@@ -3,6 +3,8 @@ package com.sample;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class Ex02LocalDate {
 
@@ -16,5 +18,11 @@ public class Ex02LocalDate {
         
         LocalDateTime dateTime = LocalDateTime.now();
         System.out.println(dateTime);
+        
+       
+        ZonedDateTime zonedDateTime = LocalDateTime.of(2020, 1, 1, 0, 0, 0).atZone(ZoneId.of("UTC"));
+        System.out.println(zonedDateTime);
+        long epochSconds = zonedDateTime.toInstant().getEpochSecond();
+        System.out.println(epochSconds);
     }
 }
